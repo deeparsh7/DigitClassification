@@ -4,7 +4,7 @@
 
 This repository contains a simple image classification project that demonstrates the process of building and training a machine learning model to classify handwritten digits from the MNIST dataset.
 
-## Project Overview
+**Project Overview**
 
 In this project, we utilize the TensorFlow library to create an image classification model. The goal is to accurately classify images of handwritten digits into their respective classes (0-9). We follow these main steps:
 
@@ -14,7 +14,7 @@ In this project, we utilize the TensorFlow library to create an image classifica
 
 3. **Model Training**: The model is compiled using the Adam optimizer and the sparse categorical cross-entropy loss function. It is then trained on the training data for a specified number of epochs. After training, the model's accuracy is evaluated on the test data.
 
-## Instructions to Run the Code
+**Instructions to Run the Code**
 
 To run the code in this repository and reproduce the results, follow these steps:
 
@@ -30,7 +30,19 @@ To run the code in this repository and reproduce the results, follow these steps
 
 6. Observe the output of each cell to track the progress and results of the training process.
 
-## Functionality
+**How It Works**
+
+Data Loading and Preprocessing: The code begins by loading the MNIST dataset, a collection of handwritten digits, using TensorFlow. It then normalizes the pixel values of both training and test images to a range of 0 to 1, ensuring consistent data representation.
+
+Model Architecture: The code constructs a Sequential model, a linear stack of layers, to perform image classification. The architecture includes a 2D convolutional layer with 32 filters, which detects patterns in the images. This is followed by a max-pooling layer that reduces the dimensionality of the feature maps.
+
+Flattening and Dense Layers: After pooling, the code flattens the 2D feature maps into a 1D vector. This flattened data is then fed into fully connected (dense) layers. A dense layer with 128 units applies ReLU activation, allowing the model to learn complex relationships in the data. Another dense layer with 10 units uses softmax activation to predict digit classes.
+
+Model Compilation and Training: The model is compiled with the Adam optimizer, a variant of stochastic gradient descent, and the sparse categorical cross-entropy loss function, suitable for multi-class classification. The code trains the model on the preprocessed training data for 10 epochs, with batches of 32 samples each.
+
+Evaluation and Test Accuracy: The trained model's performance is evaluated using the test data. The code computes the test loss and accuracy, providing insights into how well the model generalizes to new, unseen data. The achieved test accuracy is printed, indicating the model's ability to correctly classify handwritten digits.
+
+**Functionality**
 
 The main functionality of this project revolves around building, training, and evaluating an image classification model using the MNIST dataset. Here's a breakdown of how the project works:
 
@@ -42,11 +54,11 @@ The main functionality of this project revolves around building, training, and e
 
 4. **Evaluation and Results**: After training, the model's accuracy is evaluated on a separate test dataset. The test accuracy provides insight into the model's generalization performance on unseen data. The achieved accuracy is showcased, allowing you to assess the effectiveness of the trained model.
 
-## Project Results
+**Project Results**
 
 After training the model on the MNIST dataset, you can expect to achieve a test accuracy of around [Achieved accuracy here - 98%].
 
-## Time and Space Complexity
+**Time and Space Complexity**
 
 In terms of efficiency, the **time complexity** of the model training primarily depends on the number of epochs and the size of the dataset. 
 
@@ -54,10 +66,10 @@ As for the **space complexity**, it is determined by the number of model paramet
 
  While both time and space complexity are important considerations, in this project, achieving a high accuracy is usually the primary focus.
 
-## Conclusion
+**Conclusion**
 
 This project serves as a beginner-friendly example of building an image classification model using machine learning techniques. 
 
-## Contact
+Contact
 as7112@srmist.edu.in,arshdeep72140@gmail.com
 
