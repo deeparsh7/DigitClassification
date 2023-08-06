@@ -28,7 +28,7 @@ To run the code in this repository and reproduce the results, follow these steps
 
 5.Google Colab will open the notebook in a new tab. 
 
-6. Observe the output of each cell to track the progress and results of the training process.
+6.Observe the output of each cell to track the progress and results of the training process.
 
 **How It Works**
 
