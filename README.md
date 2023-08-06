@@ -30,6 +30,18 @@ To run the code in this repository and reproduce the results, follow these steps
 
 6. Observe the output of each cell to track the progress and results of the training process.
 
+## Functionality
+
+The main functionality of this project revolves around building, training, and evaluating an image classification model using the MNIST dataset. Here's a breakdown of how the project works:
+
+1. **Loading and Preprocessing Data**: The MNIST dataset, comprising images of handwritten digits, is loaded using TensorFlow. The pixel values of the images are normalized to a range between 0 and 1, and the images are reshaped to match the expected input shape of the model.
+
+2. **Model Architecture**: A convolutional neural network (CNN) model is constructed using TensorFlow's Sequential API. The model consists of convolutional layers, max-pooling layers, and dense layers. This architecture enables the model to learn and extract relevant features from the digit images.
+
+3. **Model Training**: The model is compiled using the Adam optimizer and the sparse categorical cross-entropy loss function. It is then trained on the training data for a specified number of epochs. During training, the model learns to make accurate predictions by adjusting its internal parameters.
+
+4. **Evaluation and Results**: After training, the model's accuracy is evaluated on a separate test dataset. The test accuracy provides insight into the model's generalization performance on unseen data. The achieved accuracy is showcased, allowing you to assess the effectiveness of the trained model.
+
 ## Project Results
 
 After training the model on the MNIST dataset, you can expect to achieve a test accuracy of around [Achieved accuracy here - 98%].
