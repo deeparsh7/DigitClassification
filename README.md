@@ -32,15 +32,15 @@ To run the code in this repository and reproduce the results, follow these steps
 
 **How It Works**
 
-Data Loading and Preprocessing: The code begins by loading the MNIST dataset, a collection of handwritten digits, using TensorFlow. It then normalizes the pixel values of both training and test images to a range of 0 to 1, ensuring consistent data representation.
+1.Data Loading and Preprocessing: The code begins by loading the MNIST dataset, a collection of handwritten digits, using TensorFlow. It then normalizes the pixel values of both training and test images to a range of 0 to 1, ensuring consistent data representation.
 
-Model Architecture: The code constructs a Sequential model, a linear stack of layers, to perform image classification. The architecture includes a 2D convolutional layer with 32 filters, which detects patterns in the images. This is followed by a max-pooling layer that reduces the dimensionality of the feature maps.
+2.Model Architecture: The code constructs a Sequential model, a linear stack of layers, to perform image classification. The architecture includes a 2D convolutional layer with 32 filters, which detects patterns in the images. This is followed by a max-pooling layer that reduces the dimensionality of the feature maps.
 
-Flattening and Dense Layers: After pooling, the code flattens the 2D feature maps into a 1D vector. This flattened data is then fed into fully connected (dense) layers. A dense layer with 128 units applies ReLU activation, allowing the model to learn complex relationships in the data. Another dense layer with 10 units uses softmax activation to predict digit classes.
+3.Flattening and Dense Layers: After pooling, the code flattens the 2D feature maps into a 1D vector. This flattened data is then fed into fully connected (dense) layers. A dense layer with 128 units applies ReLU activation, allowing the model to learn complex relationships in the data. Another dense layer with 10 units uses softmax activation to predict digit classes.
 
-Model Compilation and Training: The model is compiled with the Adam optimizer, a variant of stochastic gradient descent, and the sparse categorical cross-entropy loss function, suitable for multi-class classification. The code trains the model on the preprocessed training data for 10 epochs, with batches of 32 samples each.
+4.Model Compilation and Training: The model is compiled with the Adam optimizer, a variant of stochastic gradient descent, and the sparse categorical cross-entropy loss function, suitable for multi-class classification. The code trains the model on the preprocessed training data for 10 epochs, with batches of 32 samples each.
 
-Evaluation and Test Accuracy: The trained model's performance is evaluated using the test data. The code computes the test loss and accuracy, providing insights into how well the model generalizes to new, unseen data. The achieved test accuracy is printed, indicating the model's ability to correctly classify handwritten digits.
+5.Evaluation and Test Accuracy: The trained model's performance is evaluated using the test data. The code computes the test loss and accuracy, providing insights into how well the model generalizes to new, unseen data. The achieved test accuracy is printed, indicating the model's ability to correctly classify handwritten digits.
 
 **Functionality**
 
