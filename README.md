@@ -18,7 +18,7 @@ In this project, we utilize the TensorFlow library to create an image classifica
 
 To run the code in this repository and reproduce the results, follow these steps:
 
-1.Go to the GitHub repository containing the code: [https://github.com/your_username/mnist-digit-classification](https://github.com/deeparsh7/DigitClassification)
+1.Go to the GitHub repository containing the code: https://github.com/deeparsh7/DigitClassification
 
 2.Click on the mnist_classification.ipynb notebook file.
 
